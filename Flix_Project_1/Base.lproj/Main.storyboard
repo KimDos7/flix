@@ -28,25 +28,43 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="159"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbi-Ng-e6L">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cbi-Ng-e6L">
                                                     <rect key="frame" x="0.0" y="2" width="111" height="155"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="155" id="9CO-9m-plQ"/>
+                                                        <constraint firstAttribute="width" constant="111" id="kgx-AX-gZs"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crC-nX-Fev">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crC-nX-Fev">
                                                     <rect key="frame" x="119" y="40" width="255" height="108"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="255" id="R9R-kc-Gcy"/>
+                                                        <constraint firstAttribute="height" constant="108" id="wVB-sW-vHQ"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq9-mF-QWf">
-                                                    <rect key="frame" x="119" y="11" width="255" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq9-mF-QWf">
+                                                    <rect key="frame" x="119" y="2" width="255" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="33" id="Mto-Ln-eKZ"/>
+                                                        <constraint firstAttribute="width" constant="255" id="ZCs-sJ-j2v"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cbi-Ng-e6L" firstAttribute="top" secondItem="gmb-d7-oZi" secondAttribute="top" constant="2" id="AsH-cX-V3m"/>
+                                                <constraint firstItem="crC-nX-Fev" firstAttribute="top" secondItem="Iq9-mF-QWf" secondAttribute="bottom" constant="5" id="K6o-Jh-cha"/>
+                                                <constraint firstItem="crC-nX-Fev" firstAttribute="leading" secondItem="cbi-Ng-e6L" secondAttribute="trailing" constant="8" symbolic="YES" id="PTs-O8-WM0"/>
+                                                <constraint firstAttribute="trailing" secondItem="Iq9-mF-QWf" secondAttribute="trailing" constant="40" id="eHP-Ie-x68"/>
+                                                <constraint firstItem="Iq9-mF-QWf" firstAttribute="top" secondItem="cbi-Ng-e6L" secondAttribute="top" id="tXR-0z-gqi"/>
+                                                <constraint firstItem="cbi-Ng-e6L" firstAttribute="top" secondItem="gmb-d7-oZi" secondAttribute="top" constant="2" id="uma-UU-Tke"/>
+                                                <constraint firstItem="cbi-Ng-e6L" firstAttribute="leading" secondItem="gmb-d7-oZi" secondAttribute="leading" id="un7-kc-QcN"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="posterView" destination="cbi-Ng-e6L" id="Npp-gn-dq5"/>
